@@ -26,3 +26,4 @@ In this repo I grouped some common useful algorithms for problem solving. They a
 11. Prime Checking 
 	- Sieve of Erathostenes
 12. Some In-Place Algorithms
+13. Newton's Method for Square Root
