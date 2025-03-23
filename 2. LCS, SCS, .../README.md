@@ -1,4 +1,7 @@
 # Common Sequences/Strings Algorithm
+Usage: `python3 LCS.py [string1] [string2]`\\
+Note that you should provide exactly 0 or 2 strings. If you provide none, "abcdef" and "axxxexx" will be used as for an example.\\
+Returns a bunch of different things, explained hereunder.
 
 ## The Base Case : LCS 
 The Longest Common Subsequence is the base case for other algortithms.\\

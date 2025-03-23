@@ -1,4 +1,5 @@
 import time
+import argparse
 
 class LCS():
 	def __init__(self):
@@ -88,8 +89,19 @@ class LCS():
 
 
 if __name__ == "__main__":
-	string1 = "abcdef"
-	string2 = "axxxexx"
+
+	parser = argparse.ArgumentParser("LCS")
+	parser.add_argument("strings", nargs="*", type=str, help="Provide either 0 or 2 strings", default=[])
+	args = parser.parse_args()
+	if len(args.strings) == 0: 
+		string1 = "abcdef"
+		string2 = "axxxexx"
+	elif len(args.strings) == 2:
+		string1 = args.strings[0]
+		string2 = args.strings[1]
+
+	else:
+		raise argparse.ArgumentTypeError("You must provide either 0 or 2 strings.")
 
 	print(f'Working with \"{string1}\" and \"{string2}\"\n')
 
